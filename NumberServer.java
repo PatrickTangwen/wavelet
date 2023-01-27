@@ -6,9 +6,9 @@ class Handler implements URLHandler {
     // various requests.
     int num = 0;
 
-    public String handleRequest(URI url) {
+        public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return String.format("Wenhua's Number: %d", num);
+            return String.format("Number: %d", num);
         } else if (url.getPath().equals("/increment")) {
             num += 1;
             return String.format("Number incremented!");
